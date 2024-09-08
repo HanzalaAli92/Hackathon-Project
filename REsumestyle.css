@@ -1,0 +1,159 @@
+/* Apply zero margin and padding to all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the body */
+body {
+    background-image: linear-gradient(to bottom right, #22fddc, #4ea0ff);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80rem;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style for the header */
+#header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 38px;
+    color: #444444;
+    font-weight: bold;
+}
+
+/* Style for the main container */
+#content-wrapper {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    justify-content: flex-end;
+    width: 80%;
+    margin: 0 auto; 
+    margin-top: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* General button styling */
+.action-btn {
+    width: 160px;
+    font-size: 18px;
+    border-radius: 6px;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Specific styling for the Start button */
+#start-action {
+    background-color: #0084ff;
+    border: 2px solid #0056d2;
+    color: white;
+}
+
+/* Hover effect for the Start button */
+#start-action:hover {
+    background-color: #006bb3;
+}
+
+/* Hide the Resume Form initially */
+#resume-form-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for the form container */
+#resume-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border: 1px solid rgba(100, 100, 100, 0.5);
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for personal information and education sections */
+#personal-details, #education-details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+#education-details {
+    margin-top: 15px;
+}
+
+/* Style for form labels */
+#resume-form label {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+/* Style for form input fields and textareas */
+#resume-form input, #resume-form textarea {
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid rgba(100, 100, 100, 0.5);
+    border-radius: 6px;
+    background-color: #f9f9f9;
+}
+
+#resume-form input {
+    height: 35px;
+}
+
+#resume-form textarea {
+    height: 70px;
+    resize: vertical;
+}
+
+/* Style for the generate resume button */
+#generate-btn {
+    background-color: #0084ff;
+    border: 2px solid #0056d2;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hover effect for the generate resume button */
+#generate-btn:hover {
+    background-color: #006bb3;
+}
+
+/* Hide the number input spinner for WebKit browsers (Chrome, Safari) */
+input[type="tel"]::-webkit-inner-spin-button,
+input[type="tel"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide the number input spinner for Firefox */
+input[type="tel"] {
+    -moz-appearance: textfield;
+}
+
+/* Hide the Resume Display section initially */
+#resume-display {
+    display: none;
+    justify-content: center;
+    font-size: 24px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Style for the resume details */
+#resume-details {
+    text-align: left;
+    padding: 20px;
+    color: #333333;
+}
